@@ -2,7 +2,7 @@
 Unit1:
   title: Build a Lab Notebook
   description:  Install Tools.  Design lab notebook.  Learn GitHub Pages. Work with Pair (pair name). 
-  start: 0
+  start: -1
   end: 3
 Unit2:
   title: Learn Language
