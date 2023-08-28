@@ -11,7 +11,7 @@ courses: { compsci: {week: 1} }
 ---
 
 ## >>>> Challenges Faced and Solutions <<<<
->
+
 - __Problem__: Forking vs Cloning (__Fixed__: Forking creates your own copy of a repository in github, while cloning makes a local copy of ithe repository: <ins>[Explanation](https://www.educative.io/answers/what-is-the-difference-between-forking-and-cloning-in-git){: .btn})</ins>
 
 
