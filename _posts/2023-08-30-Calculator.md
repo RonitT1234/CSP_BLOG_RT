@@ -3,7 +3,7 @@ toc: true
 comments: false
 layout: post
 title: Calculator MD
-description: Grab of the Calculator from APCSA repo.
+description: MY verison of the calculator from the Slack Message
 type: tangibles
 courses: { compsci: {week: 2} }
 ---
