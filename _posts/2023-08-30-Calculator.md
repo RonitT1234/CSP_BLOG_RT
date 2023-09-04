@@ -4,7 +4,7 @@ comments: false
 layout: post
 title: Calculator MD
 description: MY verison of the calculator from the Slack Message
-type: tangibles
+type: hacks
 courses: { compsci: {week: 2} }
 ---
 
