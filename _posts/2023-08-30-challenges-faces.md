@@ -2,7 +2,7 @@
 toc: true
 comments: false
 layout: post
-title: Challenges Faced(Original Homepage)
+title: Week 1 Review (Challenges Faced)
 description: A list of challenges me and my partner faced and a list of solutions to the challenges we encountered.
 type: tangibles
 courses: { compsci: {week: 1} }

@@ -2,7 +2,7 @@
 toc: true
 comments: false
 layout: post
-title: Useful Information(Original Homepage)
+title: Week 0 Review (Useful Information)
 description: A collection of commands that helped me and my partner throughout the Sprint.
 type: tangibles
 courses: { compsci: {week: 0} }

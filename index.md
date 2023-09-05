@@ -30,8 +30,6 @@ I am Ronit Thomas, a sophomore at Del Norte High School.
 ![batman](/images/batman.jpg)
 [![batmaninavders](/images/batmaninvaders.jpg)](https://www.youtube.com/)
 
-
-[![Alt Text](image_url)](link_url)
 ---
 
 
