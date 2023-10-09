@@ -18,6 +18,7 @@ I am Ronit Thomas, a sophomore at Del Norte High School.
 - I'm a big fan of Batman!
 
 ![art](/images/drawing.jpg)
+![frontend](/images/pokemon.jpg)
 
 ---
 
