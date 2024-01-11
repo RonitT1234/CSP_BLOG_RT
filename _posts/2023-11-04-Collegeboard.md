@@ -8,6 +8,8 @@ type: tangibles
 courses: { compsci: {week: 9} }
 ---
 
+[link to incorrect questions](https://apclassroom.collegeboard.org/103/assessments/results/55303670/performance)
+
 ## Learning Journey.
 In preparation for taking this Collegeboard Practice MC I focused my review on the team teaching topics that we covered this trimester. These topics include, The Internet, Routing, Computing, Beneficial and Harmful Effects, Digital Divide, Computing Bias, Undecided Problems, Crowdsourcing, Legal and Ethical Concerns, Safe Computing. I went over the given team teach lessons for all these topics and re-did the popcorn asks and made a point to read all of the given information. I also reviewd the homework we did for all of these topics to make sure I was prepared. After reviewing for a while I was prepared and took the MC.
 
