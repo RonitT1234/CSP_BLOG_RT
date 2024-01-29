@@ -4,49 +4,116 @@ title: Ronit Thomas Blog
 ---
 
 
-# >>>> Ronit Thomas' Page <<<<
+<style>
+ #login {
+    margin-top: 10px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    width:100%;
+}
+.login-container {
+  border: 3px solid #f1f1f1;
+}
 
-This is my [Github account](https://github.com/RonitT1234) !!
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
 
----
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 200px;
+}
 
-## >>>> Who am I? <<<<
-I am Ronit Thomas, a sophomore at Del Norte High School. 
-- Currently I am learning about Computer Science.
-- I'm from San Diego
-- I really like playing sports and playing videogames
-- I'm a big fan of Batman!
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
 
-![art](/images/drawing.jpg)
-![frontend](/images/pokemon.jpg)
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
 
----
+.container {
+  padding: 16px;
+}
 
-## >>>> Batman Section <<<<
->__Batman__ is really awesome and I think he is very cool for multiple reasons:
-- He has a cool suit!
-- He is really strong
-- He saves his city a lot of times
+span.psw {
+  display: flex;
+  justify-items: center;
+  text-align: center;
+  margin-left: 325px;
+  padding-top: 16px;
+}
 
-![batman](/images/batman.jpg)
-[![batmaninavders](/images/batmaninvaders.jpg)](https://www.youtube.com/)
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
 
----
+</style>
+<div class="login-container">
+  <div class="imgcontainer">
+    <img src="https://i.ibb.co/JKpXRMP/bird-colorful-logo-gradient-vector-343694-1365.jpg" alt="Avatar" class="avatar">
+  </div>
 
+<form action="javascript:login_user()">
+    <label for="uid"><b>Username</b></label>
+    <input type="text" id="uid" placeholder="Enter Username" name="uid" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+    <button class='button'>Log in</button>
+    <div>
+    <span class="psw">Need an account? <a href="{{site.baseurl}}/signup"> Sign Up</a></span>
+    </div>
+  </div>
 
-
-## >>>> Shortcuts <<<<
->
-- [CSP WEBSITE](https://nighthawkcoders.github.io/teacher/)
-- [SLACK](https://app.slack.com/client/TUDAF53UJ/CUU064ACX)
-- [SYNERGY](https://sis.powayusd.com/PXP2_Login_Student.aspx?regenerateSessionId=True)
-- [MYCONNECT](https://poway.instructure.com/)
-
-## >>>> Helpful Markdown Video <<<<
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2JE66WFpaII?si=sSXqe5nbjts9vqMT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-
-
-
-<iframe src="https://scratch.mit.edu/projects/46553046/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+</form>
+<script type="module">
+    import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
+    function login_user(){
+      var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+        const url = uri + '/api/users/authenticate';
+        const body = {
+            uid: document.getElementById("uid").value,
+            password: document.getElementById("password").value,
+        };
+        const authOptions = { 
+            method: 'POST', 
+            cache: 'no-cache',
+            headers: myHeaders,
+            body: JSON.stringify(body)
+        };
+        fetch(url, authOptions)
+        .then(response => {
+            if (!response.ok) {
+                const errorMsg = 'Login error: ' + response.status;
+                console.log(errorMsg);
+                return;
+            }
+            window.location.href = "{{site.baseurl}}/main";
+        })
+        .catch(err => {
+            console.error(err);
+        });
+    }
+    window.login_user = login_user;
+</script>
