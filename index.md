@@ -71,7 +71,7 @@ span.psw {
 </style>
 <div class="login-container">
   <div class="imgcontainer">
-    <img src="https://i.ibb.co/JKpXRMP/bird-colorful-logo-gradient-vector-343694-1365.jpg" alt="Avatar" class="avatar">
+    <img src="{{site.baseurl}}/images/logo.webp" alt="Avatar" class="avatar">
   </div>
 
 <form action="javascript:login_user()">
@@ -83,7 +83,7 @@ span.psw {
     <div>
     <span class="psw">Need an account? <a href="{{site.baseurl}}/signup"> Sign Up</a></span>
     </div>
-  </div>
+  
 
 </form>
 <script type="module">
