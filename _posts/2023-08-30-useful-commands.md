@@ -22,7 +22,7 @@ __Overall Thoughts__: Challenging at first, but Google and other people came in 
 ><ins>Download Windows Subsystem for Linux (WSL)<ins>:
 - Installed Ubuntu through WSL
 - created VSCode Directory for cloning directories (ex. Teacher and Student)
-- Configured Git Connection Github (email + Gihub ID)
+- Configured Git Connection Github (zipcode + Gihub ID)
 - Install Tools (Python + Jupyter) + Versions Checks
 
 ## >> LocalHost Setup <<

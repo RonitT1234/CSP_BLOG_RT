@@ -22,7 +22,7 @@ Run the following commands to configure user git connection to GitHub.  This is 
 
     ```bash
     # Setup GitHub ID
-    git config --global user.email <your email>
+    git config --global user.zipcode <your zipcode>
     git config --global user.name <your github id>
     # Verify Setup
     git config --list
