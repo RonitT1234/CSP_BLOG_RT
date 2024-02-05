@@ -3,37 +3,45 @@ layout: default
 title: Ronit Thomas Blog
 ---
 
-
 <style>
  #login {
     margin-top: 10px;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     text-align: center;
-    width:100%;
+    width: 100%;
 }
 .login-container {
-  border: 3px solid #f1f1f1;
+  border: 3px solid #4CAF50;
+  background: linear-gradient(to right, #3aded8, #fa0c0c);
 }
 
 input[type=text], input[type=password] {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+  padding: 14px 20px;
+  margin: 10px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 2px solid #2E7D32;
   box-sizing: border-box;
+  background-color: #ff91fd;
+  color: white;
 }
 
 button {
-  padding: 14px 20px;
-  margin: 8px 0;
+  background-color: #ff91fd;
+  color: white;
+  padding: 16px 20px;
+  margin: 10px 0;
   border: none;
   cursor: pointer;
   width: 50%;
-  margin-left: 200px;
+  margin-left: 170px;
+  border-radius: 5px;
+}
+button:hover {
+  opacity: 0.8;
 }
 
 .imgcontainer {
@@ -42,28 +50,38 @@ button {
 }
 
 img.avatar {
-  width: 40%;
+  width: 60%;
   border-radius: 50%;
 }
 
 .container {
   padding: 16px;
+  color: #fff;
 }
 
 span.psw {
   display: flex;
-  justify-items: center;
+  justify-content: center;
   text-align: center;
-  margin-left: 325px;
+  margin-left: 225px;
   padding-top: 16px;
+  color: #3498db;
+}
+span.psw2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 220px;
+  color: #3498db;
 }
 
-@media screen and (max-width: 300px) {
-  span.psw {
+@media screen and (max-width: 600px) {
+  span.psw, span.psw2 {
     display: block;
     float: none;
+    margin-left: 0;
   }
-  .cancelbtn {
+  button {
     width: 100%;
   }
 }
@@ -81,6 +99,7 @@ span.psw {
     <input type="password" id="password" placeholder="Enter Password" name="password" required>
     <button class='button'>Log in</button>
     <div>
+    <span class="psw2">Want to delete an account? <a href="{{site.baseurl}}/delete"> Delete</a></span>
     <span class="psw">Need an account? <a href="{{site.baseurl}}/signup"> Sign Up</a></span>
     </div>
   
