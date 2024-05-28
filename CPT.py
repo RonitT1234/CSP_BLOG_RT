@@ -1,10 +1,13 @@
 import random
 
+#ChatGPT was used throughout the test in certain print statements to make the words sound more formal.
+
 comments = []
 
 def add_comment(movie, comment_text, rating, pin):
     comments.append({"movie": movie, "comment_text": comment_text, "rating": rating, "likes": 0, "pin": pin})
 
+# the following sample comments were created with the assitance of ChatGPT.
 add_comment("The Shawshank Redemption", "Classic movie, a powerful story of hope and friendship.", 5, str(random.randint(1000, 9999)))
 add_comment("The Godfather", "Timeless movie, a gripping tale of family and power.", 5, str(random.randint(1000, 9999)))
 add_comment("The Dark Knight", "Iconic movie, Heath Ledger's Joker is unforgettable.", 5, str(random.randint(1000, 9999)))
@@ -64,6 +67,7 @@ def print_comments_by_rating(desired_rating):
         print(f"Likes: {comment['likes']}\n")
 
 def get_most_liked_comments(num_comments):
+    #ChatGPT also helped fix the following line:
     sorted_comments = sorted(comments, key=lambda x: x['likes'], reverse=True)
     for comment in sorted_comments[:num_comments]:
         print(f"\nmovie: {comment['movie']}")
@@ -71,6 +75,7 @@ def get_most_liked_comments(num_comments):
         print(f"Rating: {comment['rating']} out of 5")
         print(f"Likes: {comment['likes']}\n")
 
+#ChatGPT also provided a template for the get_comment_statistics below:
 def get_comment_statistics():
     total_comments = len(comments)
     total_likes = sum(comment['likes'] for comment in comments)
